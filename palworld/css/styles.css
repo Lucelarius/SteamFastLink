@@ -1,0 +1,113 @@
+.table {
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.table th {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+    padding: 5px;
+}
+
+.table td {
+    min-width: 70px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #dddddd;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.table tbody tr:nth-child(odd){
+	background: #fff;
+}
+
+.table tbody tr:nth-child(even){
+	background: #F7F7F7;
+}
+
+.gold {
+    background-color: gold;
+}
+
+.red {
+    color: red;
+}
+
+.dark {
+    background-image: url("../img/Dark_icon.webp");
+    background-size: 20px;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-position: 45px 50%;
+}
+
+.dragon {
+    background-image: url("../img/Dragon_icon.webp");
+    background-size: 20px;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-position: 45px 50%;
+}
+
+.electric {
+    background-image: url("../img/Electric_icon.webp");
+    background-size: 20px;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-position: 45px 50%;
+}
+
+.fire {
+    background-image: url("../img/Fire_icon.webp");
+    background-size: 20px;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-position: 45px 50%;
+}
+
+.grass {
+    background-image: url("../img/Grass_icon.webp");
+    background-size: 20px;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-position: 45px 50%;
+}
+
+.ground {
+    background-image: url("../img/Ground_icon.webp");
+    background-size: 20px;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-position: 45px 50%;
+}
+
+.ice {
+    background-image: url("../img/Ice_icon.webp");
+    background-size: 20px;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-position: 45px 50%;
+}
+
+.neutral {
+    background-image: url("../img/Neutral_icon.webp");
+    background-size: 20px;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-position: 45px 50%;
+}
+
+.water {
+    background-image: url("../img/Water_icon.webp");
+    background-size: 20px;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-position: 45px 50%;
+}
