@@ -1,35 +1,35 @@
 .table {
-    border: 1px solid #dddddd;
     border-collapse: collapse;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
+    text-align: center;
 }
 
 .table th {
-    text-align: center;
     font-weight: bold;
     font-size: 16px;
-    border: 1px solid #dddddd;
+    border: 1px solid #8882c4;
     padding: 5px;
+    background-color: darkslateblue;
+    color: lightblue;
 }
 
 .table td {
     min-width: 70px;
     font-size: 14px;
     font-weight: bold;
-    border: 1px solid #dddddd;
+    border: 1px solid #8882c4;
     padding-left: 5px;
     padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .table tbody tr:nth-child(odd){
-	background: #fff;
+	background: #ffffff;
 }
 
 .table tbody tr:nth-child(even){
-	background: #F7F7F7;
+	background: #c3bdf5;
 }
 
 .gold {
@@ -45,7 +45,7 @@
     background-size: 20px;
     background-attachment: local;
     background-repeat: no-repeat;
-    background-position: 45px 50%;
+    background-position: right 50%;
 }
 
 .dragon {
@@ -53,7 +53,7 @@
     background-size: 20px;
     background-attachment: local;
     background-repeat: no-repeat;
-    background-position: 45px 50%;
+    background-position: right 50%;
 }
 
 .electric {
@@ -61,7 +61,7 @@
     background-size: 20px;
     background-attachment: local;
     background-repeat: no-repeat;
-    background-position: 45px 50%;
+    background-position: right 50%;
 }
 
 .fire {
@@ -69,7 +69,7 @@
     background-size: 20px;
     background-attachment: local;
     background-repeat: no-repeat;
-    background-position: 45px 50%;
+    background-position: right 50%;
 }
 
 .grass {
@@ -77,7 +77,7 @@
     background-size: 20px;
     background-attachment: local;
     background-repeat: no-repeat;
-    background-position: 45px 50%;
+    background-position: right 50%;
 }
 
 .ground {
@@ -85,7 +85,7 @@
     background-size: 20px;
     background-attachment: local;
     background-repeat: no-repeat;
-    background-position: 45px 50%;
+    background-position: right 50%;
 }
 
 .ice {
@@ -93,7 +93,7 @@
     background-size: 20px;
     background-attachment: local;
     background-repeat: no-repeat;
-    background-position: 45px 50%;
+    background-position: right 50%;
 }
 
 .neutral {
@@ -101,7 +101,7 @@
     background-size: 20px;
     background-attachment: local;
     background-repeat: no-repeat;
-    background-position: 45px 50%;
+    background-position: right 50%;
 }
 
 .water {
@@ -109,5 +109,5 @@
     background-size: 20px;
     background-attachment: local;
     background-repeat: no-repeat;
-    background-position: 45px 50%;
+    background-position: right 50%;
 }

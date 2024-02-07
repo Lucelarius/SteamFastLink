@@ -1,622 +1,628 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Характеры Палов</title>
-<link rel="stylesheet" href="css/styles.css">
+	<title>Характеры Палов</title>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-<table id="pwcharacter" class="table">
-	<tbody>
-		<tr>
-			<th onclick="sortTable(0)">Название</th>
-			<th onclick="sortTable(1)">Атака</th>
-			<th onclick="sortTable(2)">Защита</th>
-			<th onclick="sortTable(3)">Скорость работы</th>
-			<th onclick="sortTable(4)">Показатель рассудка</th>
-			<th onclick="sortTable(5)">Уровень сытости</th>
-			<th onclick="sortTable(6)">Скорость перемещения</th>
-			<th onclick="sortTable(7)">Бонусы игроку</th>
-		</tr>
-		<tr>
-			<td>Аномальный</td>
-			<td></td>
-			<td class="neutral">+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Аромат трав</td>
-			<td class="grass">+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr class="red">
-			<td>Бегущий от проблем</td>
-			<td>-20%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr class="red">
-			<td>Бездонный желудок</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td>-15%</td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Бойкий</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td>+10%</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Водонепроницаемость</td>
-			<td></td>
-			<td class="water">+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Грубый</td>
-			<td>+15%</td>
-			<td></td>
-			<td>-10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="gold">Гуру диет</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td class="gold">+15%</td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Диэлектрик</td>
-			<td></td>
-			<td class="electric">+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Драконья кровь</td>
-			<td class="dragon">+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="gold">Здоровяк</td>
-			<td></td>
-			<td class="gold">+20%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Играющий с огнем</td>
-			<td class="fire">+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Конденсатор</td>
-			<td class="electric">+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="gold">Координатор штурмовых операций</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td class="gold">+10% Атака</td>
-		</tr>
-		<tr>
-			<td class="gold">Лидер лесозаготовок</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td class="gold">+25% Скорость рубки деревьев</td>
-		</tr>
-		<tr>
-			<td>Любитель водных игр</td>
-			<td class="water">+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Любитель загара</td>
-			<td></td>
-			<td class="fire">+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Мазохист</td>
-			<td>-15%</td>
-			<td>+15%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Малоежка</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td>+10%</td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="gold">Мастеровитый</td>
-			<td></td>
-			<td></td>
-			<td class="gold">+50%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="gold">Мистер мускул</td>
-			<td>+30%</td>
-			<td></td>
-			<td class="gold">-50%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="gold">Мотиватор</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td class="gold">+25% Скорость работы</td>
-		</tr>
-		<tr class="red">
-			<td>Мягкотелый</td>
-			<td></td>
-			<td>-10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Настырный</td>
-			<td>+10%</td>
-			<td>-10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="gold">Начальник рудника</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td class="gold">+25% Эффективность сбора</td>
-		</tr>
-		<tr class="red">
-			<td>Невротик</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td>-10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr class="red">
-			<td>Неуклюжий</td>
-			<td></td>
-			<td></td>
-			<td>-10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Оптимист</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td>+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Отважный</td>
-			<td>+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Покров ночи</td>
-			<td class="dark">+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Природная защита</td>
-			<td></td>
-			<td class="grass">+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Работяга</td>
-			<td>-30%</td>
-			<td></td>
-			<td>+30%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Садист</td>
-			<td>+15%</td>
-			<td>-15%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Светлое создание</td>
-			<td></td>
-			<td class="dark">+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="gold">Свирепый</td>
-			<td class="gold">+20%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Сейсмостойкость</td>
-			<td></td>
-			<td class="ground">+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Сила земли</td>
-			<td class="ground">+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="gold">Спринтер</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td class="gold">+30%</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="gold">Старательный</td>
-			<td></td>
-			<td></td>
-			<td class="gold">+20%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="gold">Счастливый</td>
-			<td class="gold">+15%</td>
-			<td></td>
-			<td class="gold">+15%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="gold">Тактик неприступного оплота</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td class="gold">+10% Защита</td>
-		</tr>
-		<tr>
-			<td>Теплокровность</td>
-			<td></td>
-			<td class="ice">+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Толстокожий</td>
-			<td></td>
-			<td>+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="gold">Трудоголик</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td class="gold">+15%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr class="red">
-			<td>Трусливый</td>
-			<td>-10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Тщеславный</td>
-			<td></td>
-			<td>-10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Убийца драконов</td>
-			<td></td>
-			<td class="dragon">+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="gold">Умелый бегун</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td class="gold">+20%</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="red">Фаталист</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td>-15%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="red">Халтурщик</td>
-			<td></td>
-			<td></td>
-			<td>-30%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Хлоднокровный</td>
-			<td class="ice">+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="red">Хрупкие кости</td>
-			<td></td>
-			<td>-20%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Чистое сознание</td>
-			<td class="neutral">+10%</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="red">Чревоугодник</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td>-10%</td>
-			<td></td>
-			<td></td>
-		</tr>
-	</tbody>
-</table>
+	<table id="pwcharacter" class="table">
+		<thead>
+			<tr>
+				<th onclick="sortTableABC(0)">Название</th>
+				<th onclick="sortTableABC(1)">Атака</th>
+				<th onclick="sortTableABC(2)">Защита</th>
+				<th onclick="sortTableABC(3)">Скорость<br>работы</th>
+				<th onclick="sortTableABC(4)">Показатель<br>рассудка</th>
+				<th onclick="sortTableABC(5)">Уровень<br>сытости</th>
+				<th onclick="sortTableABC(6)">Скорость<br>перемещения</th>
+				<th onclick="sortTableABC(7)">Бонусы игроку</th>
+			</tr>
+		</thead>
+		<tbody>
+			
+			<tr>
+				<td>Аномальный</td>
+				<td></td>
+				<td class="neutral">+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Аромат трав</td>
+				<td class="grass">+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class="red">
+				<td>Бегущий от проблем</td>
+				<td>-20%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class="red">
+				<td>Бездонный желудок</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>-15%</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Бойкий</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>+10%</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Водонепроницаемость</td>
+				<td></td>
+				<td class="water">+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Грубый</td>
+				<td>+15%</td>
+				<td></td>
+				<td>-10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="gold">Гуру диет</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="gold">+15%</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Диэлектрик</td>
+				<td></td>
+				<td class="electric">+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Драконья кровь</td>
+				<td class="dragon">+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="gold">Здоровяк</td>
+				<td></td>
+				<td class="gold">+20%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Играющий с огнем</td>
+				<td class="fire">+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Конденсатор</td>
+				<td class="electric">+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="gold">Координатор штурмовых операций</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="gold">+10% Атака</td>
+			</tr>
+			<tr>
+				<td class="gold">Лидер лесозаготовок</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="gold">+25% Скорость рубки деревьев</td>
+			</tr>
+			<tr>
+				<td>Любитель водных игр</td>
+				<td class="water">+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Любитель загара</td>
+				<td></td>
+				<td class="fire">+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Мазохист</td>
+				<td>-15%</td>
+				<td>+15%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Малоежка</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>+10%</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="gold">Мастеровитый</td>
+				<td></td>
+				<td></td>
+				<td class="gold">+50%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="gold">Мистер мускул</td>
+				<td class="gold">+30%</td>
+				<td></td>
+				<td class="gold">-50%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="gold">Мотиватор</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="gold">+25% Скорость работы</td>
+			</tr>
+			<tr class="red">
+				<td>Мягкотелый</td>
+				<td></td>
+				<td>-10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Настырный</td>
+				<td>+10%</td>
+				<td>-10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="gold">Начальник рудника</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="gold">+25% Эффективность сбора</td>
+			</tr>
+			<tr class="red">
+				<td>Невротик</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>-10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class="red">
+				<td>Неуклюжий</td>
+				<td></td>
+				<td></td>
+				<td>-10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Оптимист</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Отважный</td>
+				<td>+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Покров ночи</td>
+				<td class="dark">+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Природная защита</td>
+				<td></td>
+				<td class="grass">+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Работяга</td>
+				<td>-30%</td>
+				<td></td>
+				<td>+30%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Садист</td>
+				<td>+15%</td>
+				<td>-15%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Светлое создание</td>
+				<td></td>
+				<td class="dark">+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="gold">Свирепый</td>
+				<td class="gold">+20%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Сейсмостойкость</td>
+				<td></td>
+				<td class="ground">+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Сила земли</td>
+				<td class="ground">+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="gold">Спринтер</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="gold">+30%</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="gold">Старательный</td>
+				<td></td>
+				<td></td>
+				<td class="gold">+20%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="gold">Счастливый</td>
+				<td class="gold">+15%</td>
+				<td></td>
+				<td class="gold">+15%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="gold">Тактик неприступного оплота</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="gold">+10% Защита</td>
+			</tr>
+			<tr>
+				<td>Теплокровность</td>
+				<td></td>
+				<td class="ice">+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Толстокожий</td>
+				<td></td>
+				<td>+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="gold">Трудоголик</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="gold">+15%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class="red">
+				<td>Трусливый</td>
+				<td>-10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Тщеславный</td>
+				<td></td>
+				<td>-10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Убийца драконов</td>
+				<td></td>
+				<td class="dragon">+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="gold">Умелый бегун</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="gold">+20%</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="red">Фаталист</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>-15%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="red">Халтурщик</td>
+				<td></td>
+				<td></td>
+				<td>-30%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Хлоднокровный</td>
+				<td class="ice">+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="red">Хрупкие кости</td>
+				<td></td>
+				<td>-20%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Чистое сознание</td>
+				<td class="neutral">+10%</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="red">Чревоугодник</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>-10%</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
 
-<script>
-function sortTable(n) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("pwcharacter");
-  switching = true;
-  //Set the sorting direction to ascending:
-  dir = "asc"; 
-  /*Make a loop that will continue until
-  no switching has been done:*/
-  while (switching) {
-    //start by saying: no switching is done:
-    switching = false;
-    rows = table.getElementsByTagName("TR");
-    /*Loop through all table rows (except the
-    first, which contains table headers):*/
-    for (i = 1; i < (rows.length - 1); i++) {
-      //start by saying there should be no switching:
-      shouldSwitch = false;
-      /*Get the two elements you want to compare,
-      one from current row and one from the next:*/
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
-      /*check if the two rows should switch place,
-      based on the direction, asc or desc:*/
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      /*If a switch has been marked, make the switch
-      and mark that a switch has been done:*/
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      //Each time a switch is done, increase this count by 1:
-      switchcount ++;      
-    } else {
-      /*If no switching has been done AND the direction is "asc",
-      set the direction to "desc" and run the while loop again.*/
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
-</script>
+	<script>
+		function sortTableABC(n) {
+			var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+			table = document.getElementById("pwcharacter");
+			switching = true;
+			//Set the sorting direction to ascending:
+			dir = "asc";
+			/*Make a loop that will continue until
+			no switching has been done:*/
+			while (switching) {
+				//start by saying: no switching is done:
+				switching = false;
+				rows = table.getElementsByTagName("TR");
+				/*Loop through all table rows (except the
+				first, which contains table headers):*/
+				for (i = 1; i < (rows.length - 1); i++) {
+					//start by saying there should be no switching:
+					shouldSwitch = false;
+					/*Get the two elements you want to compare,
+					one from current row and one from the next:*/
+					x = rows[i].getElementsByTagName("TD")[n];
+					y = rows[i + 1].getElementsByTagName("TD")[n];
+					/*check if the two rows should switch place,
+					based on the direction, asc or desc:*/
+					if (dir == "asc") {
+						if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+							//if so, mark as a switch and break the loop:
+							shouldSwitch = true;
+							break;
+						}
+					} else if (dir == "desc") {
+						if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+							//if so, mark as a switch and break the loop:
+							shouldSwitch = true;
+							break;
+						}
+					}
+				}
+				if (shouldSwitch) {
+					/*If a switch has been marked, make the switch
+					and mark that a switch has been done:*/
+					rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+					switching = true;
+					//Each time a switch is done, increase this count by 1:
+					switchcount++;
+				} else {
+					/*If no switching has been done AND the direction is "asc",
+					set the direction to "desc" and run the while loop again.*/
+					if (switchcount == 0 && dir == "asc") {
+						dir = "desc";
+						switching = true;
+					}
+				}
+			}
+		}
+	</script>
 
 </body>
+
 </html>
