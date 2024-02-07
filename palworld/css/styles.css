@@ -24,12 +24,12 @@
     padding-bottom: 3px;
 }
 
-.table tbody tr:nth-child(odd){
-	background: #ffffff;
+.table tbody tr:nth-child(odd) {
+    background: #ffffff;
 }
 
-.table tbody tr:nth-child(even){
-	background: #c3bdf5;
+.table tbody tr:nth-child(even) {
+    background: #c3bdf5;
 }
 
 .gold {
@@ -40,74 +40,71 @@
     color: red;
 }
 
-.dark {
-    background-image: url("../img/Dark_icon.webp");
+.dark,
+.dragon,
+.electric,
+.fire,
+.grass,
+.ground,
+.ice,
+.neutral,
+.water,
+.hand,
+.wood,
+.mining {
     background-size: 20px;
     background-attachment: local;
     background-repeat: no-repeat;
     background-position: right 50%;
+}
+
+.dark {
+    background-image: url("../img/Dark_icon.webp");
 }
 
 .dragon {
     background-image: url("../img/Dragon_icon.webp");
-    background-size: 20px;
-    background-attachment: local;
-    background-repeat: no-repeat;
-    background-position: right 50%;
 }
 
 .electric {
     background-image: url("../img/Electric_icon.webp");
-    background-size: 20px;
-    background-attachment: local;
-    background-repeat: no-repeat;
-    background-position: right 50%;
 }
 
 .fire {
     background-image: url("../img/Fire_icon.webp");
-    background-size: 20px;
-    background-attachment: local;
-    background-repeat: no-repeat;
-    background-position: right 50%;
 }
 
 .grass {
     background-image: url("../img/Grass_icon.webp");
-    background-size: 20px;
-    background-attachment: local;
-    background-repeat: no-repeat;
-    background-position: right 50%;
 }
 
 .ground {
     background-image: url("../img/Ground_icon.webp");
-    background-size: 20px;
-    background-attachment: local;
-    background-repeat: no-repeat;
-    background-position: right 50%;
 }
 
 .ice {
     background-image: url("../img/Ice_icon.webp");
-    background-size: 20px;
-    background-attachment: local;
-    background-repeat: no-repeat;
-    background-position: right 50%;
 }
 
 .neutral {
     background-image: url("../img/Neutral_icon.webp");
-    background-size: 20px;
-    background-attachment: local;
-    background-repeat: no-repeat;
-    background-position: right 50%;
 }
 
 .water {
     background-image: url("../img/Water_icon.webp");
-    background-size: 20px;
-    background-attachment: local;
-    background-repeat: no-repeat;
-    background-position: right 50%;
+}
+
+.hand {
+    background-color: gold;
+    background-image: url("../img/Handiwork_Icon.webp");
+}
+
+.wood {
+    background-color: gold;
+    background-image: url("../img/Lumbering_Icon.webp");
+}
+
+.mining {
+    background-color: gold;
+    background-image: url("../img/Mining_Icon.webp");
 }
